@@ -1,0 +1,37 @@
+.index-banner{
+    background: url(../images/index/photo-1588159343745-445ae0b16383@2x.png) no-repeat center;
+    background-size: cover;
+    background-position-x: -150px;
+    padding: 295px 0px;
+    @include iphone6Plus(){
+        padding: 101px 0 135px;
+        background-position-x: -50px;
+    }
+    h1{
+        @include iphone6Plus(){
+            font-size: $font-size-base * 2;
+        }
+    }
+    p{
+        line-height: 1.5;
+        @include iphone6Plus(){
+            font-size: $font-size-base * 1.25;
+        }
+    }
+    button{
+        padding: 10px 100px;
+        @include iphone6Plus(){
+            display: block;
+            width: 100%;
+            font-size: $font-size-base * 1.75;
+        }
+    }
+
+}
+.btn-radius{
+    border-radius: 30px;
+}
+.mask{
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0%;
+}

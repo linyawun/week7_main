@@ -1,0 +1,9 @@
+.product-menu{
+    padding: 14px 0;
+}
+.pageList{
+    a:hover{
+        color: $primaryLight !important; 
+        border-bottom: 1px solid $primaryLight;
+    }
+}

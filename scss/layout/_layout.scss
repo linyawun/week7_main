@@ -1,0 +1,60 @@
+body{
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; 
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style-type: none;
+}
+a:hover{
+    text-decoration:none;
+}
+.p-lg{
+    font-size: $font-size-base * 1.25;
+}
+.border-2{
+    border-width:2px !important;
+}
+.navbar{
+    .navbar-brand h2{
+        width: 128px;   /*自訂文字寬度*/
+        height: 38px;
+        background-image: url('../images/index/d’Perfume@2x.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include hide-text();
+    }
+    .navbar-toggler:focus {
+        outline: 0;
+    }
+    .shopping-cart-count{
+        top: -9px;
+        right: -9px;
+        border-radius: 7px;
+        padding: 1px 5px;
+    }
+    .mobileNav{
+        top: 100%;
+        z-index: 3;
+    }
+}
+
+.contactForm{
+    background: url(../images/index/photo-1532413992378-f169ac26fff0@2x.png) no-repeat center;
+    background-size: cover;
+    padding: 300px 0px 112px;
+    @include iphone6Plus(){
+        background: url(../images/index/photo-1532413992378-f169ac26fff0_mobile@2x.png) no-repeat center;
+        background-size: cover;
+    }
+    .input-group{
+        input{
+        height: 56px;
+        }
+    }
+
+}
